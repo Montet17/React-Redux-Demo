@@ -18,9 +18,9 @@ const App = () => (
             <h2>User Details- Jamie</h2>
             <UserDetails />
         </div>
-        <div style={divStyle}>
+        {/* <div style={divStyle}>
             <Parent />
-        </div>
+        </div> */}
     </div>
 );
 

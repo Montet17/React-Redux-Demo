@@ -12,7 +12,8 @@ import App from './components/App';
 const logger = createLogger();
 const store = createStore(
     allReducers,
-    applyMiddleware(thunk, promise, logger)
+    applyMiddleware(thunk, promise, logger),
+    window.devToolsExtension && window.devToolsExtension()
 );
 
 ReactDOM.render(
